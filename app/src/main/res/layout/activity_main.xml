@@ -10,11 +10,13 @@
         android:id="@+id/mytext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome! Here you will discover some views."
+        android:text= "Welcome! Here you will discover some views."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 
 
 
@@ -34,12 +36,14 @@
         android:id="@+id/imageView"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        tools:srcCompat="@drawable/test22"
-        app:layout_constraintTop_toBottomOf="@id/mybutton"
-        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="TEST"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/test22" />
 
 
-        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
