@@ -1,10 +1,23 @@
 
 # Rapport
+I have chosen to use ConstraintLayout. I have edited the TextViews text, ID and also changed the margins. I have also added an ImageView and a Button. The ImageView is of an X and the Button says Button One, both of 
+these margins have also been edited resulting in different positions in the layout. 
 
-**Skriv din rapport här!**
+The following code shows the code for the button which is named "mybutton". Here you can for example see that margins, ID and text is changed. 
+I wanted the button to be placed under the text so I have used "app:layout_constraintTop_toBottomOf="@id/mytext"" and then I added some additional space
+from the top with android:layout_marginTop="95dp"  There is a also a screenshot attached "Widgets.png" where the layout of the screen is shown on 
+execution.
 
-_Du kan ta bort all text som finns sedan tidigare_.
-
+<Button
+android:id="@+id/mybutton"
+android:layout_width="300dp"
+android:layout_height="wrap_content"
+android:text="Button One"
+android:layout_marginTop="95dp"
+app:layout_constraintTop_toBottomOf="@id/mytext"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+/>
 ## Följande grundsyn gäller dugga-svar:
 
 - Ett kortfattat svar är att föredra. Svar som är längre än en sida text (skärmdumpar och programkod exkluderat) är onödigt långt.
@@ -33,7 +46,7 @@ function errorCallback(error) {
 
 Bilder läggs i samma mapp som markdown-filen.
 
-![](android.png)
+![](Widgets.png)
 
 Läs gärna:
 
